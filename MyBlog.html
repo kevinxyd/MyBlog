@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--当前网页使用最新的浏览器内核来解析，如：Edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-    viewport视口的参数设置:
+    网页宽度：设备宽度
+    初始的缩放比：1:1    -->
+    <meta name="viewport" content="width=device-width, initialscale=1">
+    <!-- 1. 导入bootstrap的css样式 -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 2. 导入jquery框架 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 3. 导入bootstrap框架文件 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Sina Microblog index</title>
+</head>
+<body style="background-color: #2b2b2b;">
+    <!--导航栏-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="border:none;opacity: 0.9;z-index: 100000">
+        <div class="container" >
+            <div class="navbar-header">
+                <button data-toggle="collapse" class="navbar-toggle collapsed" data-target="#myNav">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                <a class="navbar-brand navbar-toggle collapsed" href="#">首页</a>
+            </div>
+            <div id="myNav" class="collapse navbar-collapse ">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" class="navbar-nav nav" style="font-family: 华文彩云;font-size: 25px;">我的博客</a>
+                    </li>
+                    <li>
+                        <a href="#">关注</a>
+                    </li>
+                    <li>
+                        <a href="#">美食</a>
+                    </li>
+                    <li>
+                        <a href="#">同城</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span> </a>
+                        <ul class="dropdown-menu " style="min-width: 68px;text-align: center" >
+                            <li><a href="#">游戏</a></li>
+                            <li><a href="#">社会</a></li>
+                            <li><a href="#">搞笑</a></li>
+                            <!--divider分隔线-->
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">时尚</a> </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">电影</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">欢迎来到**的博客</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">切换账号<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" style="min-width: 68px;text-align: center;" >
+                            <li><a style=" padding: 5px 8px;" href="#">3110912598</a> </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a style="padding: 5px 8px;" href="#">1234562583</a> </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a style="padding: 5px 8px;" href="index.html">退出</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--导航栏end-->
+
+    <div class="container">
+        <br><br><br>
+    </div>
+    <!--容器-->
+    <div class="container">
+        <!--轮播图-->
+        <div class="carousel slide" style="" id="myPic" data-ride="carousel" data-interval="2000">
+            <!--圆点-->
+            <ul class="carousel-indicators">
+                <li data-slide-to="0" data-target="#myPic" class="active"></li>
+                <li data-slide-to="1" data-target="#myPic"></li>
+                <li data-slide-to="2" data-target="#myPic"></li>
+                <li data-slide-to="3" data-target="#myPic"></li>
+            </ul>
+            <!--圆点end-->
+            <!--轮播图片-->
+            <div class="carousel-inner">
+                <div class="item active" >
+                    <img src="img/2.jpg" alt="" >
+                </div>
+                <div class="item">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/4.jpg" alt="">
+                </div>
+            </div>
+            <!--轮播图片end-->
+            <!--左右图标-->
+            <a class="left carousel-control" href="#myPic"  data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+
+            <a class="right carousel-control" href="#myPic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <!--左右图标end-->
+        </div>
+        <!--轮播图end-->
+    </div>
+    <!--容器end-->
+    <div class="container">
+        <hr>
+    </div>
+    <!--容器-->
+    <div class="container ">
+        <!--行 对齐-->
+        <div class="row">
+            <!--列表-->
+            <div class="col-md-9 navbar-left">
+                <!--头部-->
+                <div class="list-group" >
+                    <div class="list-group-item active"style="background-color: cornflowerblue;border: 1px solid darkslategray">
+                        <h4 class="list-group-item-heading">内容中心</h4>
+                    </div>
+                </div>
+                <!--头部end-->
+                <div class="list-group-item" id="wenzhang" style="background-color: #2b2b2b;border: 0px solid darkslategray">
+                    <div class="row ">
+                        <!--文章内容-->
+                        <div class="col-md-9 " style="color: navajowhite">
+                            <!--文章标题-->
+                            <div class="list-group-item-heading">
+                                <strong>马超</strong>
+                            </div>
+                            <!--文章标题end-->
+                            <p>马超朝指定方向投掷一把冷晖枪，对触碰的敌人造成200/240/280/320/360/400（+60%物理加成）点物理伤害(根据当前移速计算额外伤害，每1点额外移速增加1.5~2.5点基础伤害)。并插入到敌人身后的位置。如果这次攻击直接击败目标，将会继续飞行一段固定距离，</p>
+                        </div>
+                        <!--文章内容end-->
+                        <div class="col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src="img/1.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <hr style="border: 1px solid darkslategray">
+                    <div class="row">
+                        <!--文章内容-->
+                        <div class="col-md-9" style="color: navajowhite">
+                            <!--文章标题-->
+                            <div class="list-group-item-heading">
+                                <strong>造物主女娲</strong>
+                            </div>
+                            <!--文章标题end-->
+                            <p>如果你闲着的时候看了看现在英雄的胜率就发发现，在法师里有个不经常简单，但是胜率却不低的，她就是女娲。除了她刚出来的时候，现在即使打了很长时间也看不到她了。但胜利里除了变态猫和氪金大佬之外就属女娲最为强势。</p>
+                        </div>
+                        <!--文章内容end-->
+                        <div class="col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src="img/2.jpg" >
+                            </a>
+                        </div>
+                    </div>
+                    <hr style="border: 1px solid darkslategray">
+                    <div class="row">
+                        <!--文章内容-->
+                        <div class="col-md-9" style="color: navajowhite">
+                            <!--文章标题-->
+                            <div class="list-group-item-heading">
+                                <strong>孙悟空</strong>
+                            </div>
+                            <!--文章标题end-->
+                            <p>孙悟空近战输出强力，团控自然不多说，难能可贵的就是猴子无论中后期的输出对于脆皮都是很可怕的（前期怕被控制），有逃生有突进有团控有输出，非常全能，对团队很有帮助，。但是要注意的是团战的时机。前期推荐打野，中后期爆发，另外，无尽战刃、宗师之力是少不了的。</p>
+                        </div>
+                        <!--文章内容end-->
+                        <div class="col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src="img/3.jpg" >
+                            </a>
+                        </div>
+                    </div>
+                    <hr style="border: 1px solid darkslategray">
+                    <div class="row">
+                        <!--文章内容-->
+                        <div class="col-md-9" style="color: navajowhite">
+                            <!--文章标题-->
+                            <div class="list-group-item-heading">
+                                <strong>鲁班</strong>
+                            </div>
+                            <!--文章标题end-->
+                            <p>要说#王者荣耀#最为热门的射手英雄，那么这个英雄就非鲁班七号莫属了。根据王者荣耀官方公布的英雄出场率，射手英雄鲁班七号的出场率排全英雄第一。然而，即使有着如此高的出场率，鲁班七号的胜率却有点惨不忍睹。</p>
+                        </div>
+                        <!--文章内容end-->
+                        <div class="col-md-3">
+                            <a href="#" class="thumbnail">
+                                <img src="img/4.jpg" >
+                            </a>
+                        </div>
+                    </div>
+                    <hr style="border: 1px solid darkslategray">
+                </div>
+                <!--分页-->
+                <div aria-label="Page navigation" class="text-center">
+                    <ul class="pagination"  style="color: #2b2b2b">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--分页end-->
+        </div>
+            <!--列表end-->
+            <!--个人信息-->
+            <div class="col-md-3"  style="opacity: 0.8">
+                <div class="jumbotron text-center">
+                    <a class="thumbnail" href="">
+                        <img src="img/tou.jpg"class="img-responsive img-circle">
+                    </a>
+                    <p>薛亚东</p>
+                    <p>个性签名</p>
+                </div>
+
+                <form class="text-center">
+                    <h4 style="color: white">记录好心情</h4>
+                    <br>
+                    <input class="form-control" id="biaoti" type="text" placeholder="标题：记录每一天">
+                    <br>
+                    <textarea rows="12" style="resize: vertical" class="form-control" id="tex">今天学会了好多知识，好开心啊，啦啦啦"</textarea><br>
+
+                    <div class="">
+                        <a class="btn btn-primary " href=""  >发表</a>
+                    </div>
+                </form>
+
+            </div>
+
+            <!--个人信息end-->
+    </div>
+    </div>
+    <!--容器end-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

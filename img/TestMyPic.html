@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--当前网页使用最新的浏览器内核来解析，如：Edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-    viewport视口的参数设置:
+    网页宽度：设备宽度
+    初始的缩放比：1:1    -->
+    <meta name="viewport" content="width=device-width, initialscale=1">
+    <!-- 1. 导入bootstrap的css样式 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 2. 导入jquery框架 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 3. 导入bootstrap框架文件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <title>Sina Microblog index</title>
+</head>
+<body>
+
+    <div class="carousel silde" id="myPic" data-ride="carousel" data-interval="2000">
+        <!--圆点-->
+        <ul class="carousel-indicators">
+            <li data-slide-to="0" data-target="#myPic" class="active"></li>
+            <li data-slide-to="1" data-target="#myPic"></li>
+            <li data-slide-to="2" data-target="#myPic"></li>
+        </ul>
+        <!--轮播图-->
+        <div class="carousel-inner">
+            <div class="item active" >
+                <img src="img/1.jpg" alt="" >
+                <div class="carousel-caption">
+                    小鲁班
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/2.jpg" alt="">
+                <div class="carousel-caption">
+                    女娲
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/3.jpg" alt="">
+                <div class="carousel-caption">
+                    鲁智深
+                </div>
+            </div>
+        </div>
+        <!--左右图标-->
+        <a class="left carousel-control" href="#myPic">
+            <span class="glyphicon glyphicon-chevron-left" data-slide="prev"></span>
+        </a>
+
+        <a class="right carousel-control" href="#myPic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</body>
+</html>

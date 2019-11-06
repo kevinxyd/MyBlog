@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--当前网页使用最新的浏览器内核来解析，如：Edge-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-    viewport视口的参数设置:
+    网页宽度：设备宽度
+    初始的缩放比：1:1    -->
+    <meta name="viewport" content="width=device-width, initialscale=1">
+    <!-- 1. 导入bootstrap的css样式 -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 2. 导入jquery框架 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 3. 导入bootstrap框架文件 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <title>Sina Microblog index</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        height: 919px;
+        background-image: url("img/2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation:mymove 5s infinite;
+        overflow: hidden;
+    }
+    .jumbotron{
+        position: fixed;
+        margin: 13% auto;
+        width: 20%;
+        right: 8%;
+        height: 38%;
+        background-color:rgba(255,255,255,0.25)
+    }
+    .input-group-addon{
+        width: 30%;
+        height: 45px;
+        padding: 0px;
+        color: white;
+        background-color:rgba(100,100,100,0.25);
+    }
+    .input-group{
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 101%;
+    }
+    .form-control{
+        height: 45px;
+    }
+    .text-center{
+        margin-top: 50px;
+    }
+    .btn{
+        height: 40px;
+        width: 120px;
+        opacity: 0.6;
+    }
+    .btn-primary{
+        margin-right: 20px;
+    }
+    .btn-danger{
+        line-height: 26px;
+    }
+</style>
+<body>
+<div class="container-fluid">
+    <div class="jumbotron">
+        <form action="MyBlog.html" >
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon">账号</div>
+                    <input class="form-control" type="text" placeholder="请输入账号">
+                </div>
+                <div class="input-group">
+                    <div class="input-group-addon">密码</div>
+                    <input class="form-control" type="password" placeholder="请输入密码">
+                </div>
+
+                <div class="text-center">
+                    <a href="MyBlog.html" class="btn btn-danger">注册</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
